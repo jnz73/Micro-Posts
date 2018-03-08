@@ -31,13 +31,12 @@ class EasyHTTP {
 
     //Make an HTTP DELETE request
     async delete(url) {
-
         const response = fetch(url, {
-                method: 'DELETE',
-                headers: { 'content-type': 'application/json' }
-            })
-            const resData = await 'Resource deleted.';
-            return resData;
+            method: 'DELETE',
+            headers: { 'content-type': 'application/json' }
+        });
+        const resData = await 'Resource deleted.';
+        return resData;
     }
 }
-export const http =new EasyHTTP();
+export const http = new EasyHTTP();
